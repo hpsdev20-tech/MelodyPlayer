@@ -133,6 +133,7 @@ fun QuickAccessSection(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun QuickAccessItem(title: String, icon: androidx.compose.ui.graphics.vector.ImageVector, onClick: () -> Unit) {
     ElevatedCard(onClick = onClick, modifier = Modifier.size(72.dp)) {
@@ -148,6 +149,7 @@ fun QuickAccessItem(title: String, icon: androidx.compose.ui.graphics.vector.Ima
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun RecentlyPlayedCard(song: Song, onClick: () -> Unit) {
     val albumArtUri = ContentUris.withAppendedId(
